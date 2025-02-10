@@ -1,6 +1,8 @@
-<img src="https://iconscout.com/lottie-animation/programmer-working-on-system-13636469" alt="Description of the GIF" width="400" height="300" />
+<p align="center" ><img  src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 100px></p>
 <h1 align="center">Hi, I'm PRASANNA LAKSHAN</h1>
 <h3 align="center">A passionate frontend and backend developer from Sri Lanka</h3>
+
+
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=0e75b6&style=flat" alt="shan2003034" /> </p>
 
@@ -17,7 +19,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="center">
 <a href="https://linkedin.com/in/www.linkedin.com/in/prasanna-lakshan-aa33b4350" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/prasanna-lakshan-aa33b4350" height="40" width="50" /></a>
-<a href="https://fb.com/https://www.facebook.com/lakshan.gajanayake" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/lakshan.gajanayake" height="40" width="50" /></a>
+<a href="https://www.facebook.com/lakshan.gajanayake" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/lakshan.gajanayake" height="40" width="50" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
