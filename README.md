@@ -1,7 +1,8 @@
+<img src="https://iconscout.com/lottie-animation/programmer-working-on-system-13636469" alt="Description of the GIF" width="400" height="300" />
 <h1 align="center">Hi, I'm PRASANNA LAKSHAN</h1>
 <h3 align="center">A passionate frontend and backend developer from Sri Lanka</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=0e75b6&style=flat" alt="shan2003034" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=0e75b6&style=flat" alt="shan2003034" /> </p>
 
 - 🔭 I’m currently working on **Callisto Banking Project**
 
