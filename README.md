@@ -18,7 +18,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="center">
-<a href="linkedin.com/in/prasanna-lakshan-aa33b4350" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/prasanna-lakshan-aa33b4350" height="40" width="50" /></a>
+<a href="https://www.linkedin.com/in/prasanna-lakshan-aa33b4350" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/prasanna-lakshan-aa33b4350" height="40" width="50" /></a>
 <a href="https://www.facebook.com/lakshan.gajanayake" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/lakshan.gajanayake" height="40" width="50" /></a>
 </p>
 
