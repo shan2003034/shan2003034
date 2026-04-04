@@ -21,7 +21,7 @@
 ### 👨‍💻 About Me
 
 - 🎓 I'm currently studying **Software Engineering** at **Java Institute for Advanced Technology**.
-- 🔭 I’m currently working on **Leafy Lane** (Organic food e-commerce) & **Trip Mate**.
+- 🔭 I’m currently working on **Leafy Lane** (Organic food e-commerce).
 - 🌱 I’m currently learning **Spring Boot** and **Android Development**.
 - 💬 Ask me about **Java, Full Stack Development, and IoT (Arduino/ESP32)**.
 - 📫 How to reach me: **shangajanayake7@gmail.com**
@@ -85,12 +85,14 @@
 
 | Project | Description |
 | ------- | ----------- |
-| 🍃 **[Leafy Lane](#)** | An organic food e-commerce platform. |
-| 💬 **[Zap Chat](#)** | A modern chat application built with React Native. |
-| 🌶️ **[Hela Rasa](#)** | Online spice business web application. |
-| ✈️ **[Trip Mate](#)** | A comprehensive travel agency website. |
+| 🍃 **[Leafy Lane Android Application](https://github.com/shan2003034/Leafy-Lane-Android-Application)** | An organic food e-commerce mobile application. |
+| ⚙️ **[Leafy Lane Springboot Admin Panel](https://github.com/shan2003034/leafylane-android-application-admin-web)** | The backend administrative dashboard to manage the Leafy Lane platform. |
+| 🏦 **[CBC Bank Java Desktop Application](https://github.com/Callisto-Software-Solution/CBC-Bank-System)** | A secure stand-alone banking management system developed with Java to handle financial operations and transactions. |
+| 🍔 **[Burger House Java Desktop Application](https://github.com/shan2003034/Burger-House)** | A stand-alone desktop application built with Java and NetBeans for managing a burger shop. |
+| 💬 **[Zap Chat React Chat Application](#)** | A modern real-time chat application built with React Native. |
+| 📚 **[The Book Club PHP E-Commerce Application](https://github.com/shan2003034/The-Book-Club-online-book-shop)** | A comprehensive online bookstore and e-commerce platform built with PHP. |
 
-*(Note: Replace the `#` with your actual public repository links)*
+
 
 ---
 
