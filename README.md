@@ -33,9 +33,9 @@
 ### ⚡ My Tech Arsenal
 
 <p align="left">
-  <strong>Frontend:</strong><br><br>
+  <strong>Frontend & Mobile:</strong><br><br>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,bootstrap,tailwind" alt="Frontend" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,bootstrap,tailwind,flutter,dart" alt="Frontend and Mobile" />
   </a>
 </p>
 
