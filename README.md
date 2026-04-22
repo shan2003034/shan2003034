@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-<h3 align="center">A passionate Final-Year Software Engineering Candidate from Sri Lanka 🇱🇰</h3>
+<h3 align="center">A passionate Final-Year Software Engineering Candidate from Sri Lanka</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
@@ -23,7 +23,7 @@
 - 🎓 I'm currently studying **Software Engineering** at **Java Institute for Advanced Technology**.
 - 🔭 I’m currently working on **Leafy Lane** (Organic food e-commerce).
 - 🌱 I’m currently learning **Spring Boot** and **Android Development**.
-- 💬 Ask me about **Java, Full Stack Development, and IoT (Arduino/ESP32)**.
+- 💬 Ask me about **Java, Full Stack Development, and IoT **.
 - 📫 How to reach me: **shangajanayake7@gmail.com**
 
 ---
