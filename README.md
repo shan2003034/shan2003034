@@ -7,7 +7,11 @@
 <h3 align="center">A passionate Final-Year Software Engineering Candidate from Sri Lanka</h3>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/shan2003034?style=social" alt="GitHub followers" />
+  &nbsp;
+  <img src="https://img.shields.io/github/stars/shan2003034?style=social" alt="GitHub stars" />
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
 </p>
 
 ---
@@ -20,9 +24,9 @@
 
 ### 👨‍💻 About Me
 
-- 🎓 I'm currently studying **Software Engineering** at **Java Institute for Advanced Technology**.
+- 🎓  I am currently studying Software Engineering at the Java Institute for Advanced Technologyand reading for my top-up degree from Birmingham City University.
 - 🔭 I’m currently working on **Leafy Lane** (Organic food e-commerce).
-- 🌱 I’m currently learning **Spring Boot** and **Android Development**.
+- 🌱 I’m currently learning **Spring Boot** and **Flutter**.
 - 💬 Ask me about **Java, Full Stack Development, and IoT **.
 - 📫 How to reach me: **shangajanayake7@gmail.com**
 
