@@ -126,12 +126,12 @@
 
 <div align="center">
   
-  <h3>Thank you for visiting my space! ✨</h3>
+  <h3>Thank you for visiting my space!</h3>
   <p>
     If you found my Full Stack or IoT projects helpful, I'd truly appreciate a 🌟 on my repositories.<br>
     Always excited to connect, collaborate, and build something amazing!
   </p>
-  <p><b>Keep Building & Happy Coding! 🚀</b></p>
+  <p><b>Keep Building & Happy Coding! </b></p>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0E75B6&height=120&section=footer" width="100%" alt="Footer Wave" />
