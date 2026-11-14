@@ -2,7 +2,7 @@ name: Discord GitHub Account Monitor
 
 on:
   schedule:
-    # Hama winadi 15 kata sarayak mulu account ekama check karanawa
+    # Checks the entire GitHub account every 15 minutes
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Check Account Events & Send Discord Embeds
+      - name: Check Account Events & Send Cyberpunk Discord Embeds
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           WEBHOOK_REPOS: ${{ secrets.DISCORD_WEBHOOK_REPOS }}
@@ -26,6 +26,7 @@ jobs:
         run: |
           python3 - << 'EOF'
           import os, json, urllib.request
+          from datetime import datetime, timezone
 
           username = os.environ['USERNAME']
           gh_pat = os.environ['GH_PAT']
@@ -36,33 +37,39 @@ jobs:
 
           os.makedirs('.github/state', exist_ok=True)
 
-          def send_discord(webhook_url, title, description, color, repo_name, actor_name, actor_avatar):
+          def send_discord(webhook_url, bot_name, title, description, color, repo_name, actor_name, actor_avatar, fields=None):
               if not webhook_url:
                   return
+              embed = {
+                  "title": title,
+                  "url": f"https://github.com/{repo_name}",
+                  "description": description,
+                  "color": color,
+                  "author": {
+                      "name": f"@{actor_name}",
+                      "url": f"https://github.com/{actor_name}",
+                      "icon_url": actor_avatar
+                  },
+                  "thumbnail": {
+                      "url": actor_avatar
+                  },
+                  "footer": {
+                      "text": f"SYSTEM // {repo_name}"
+                  },
+                  "timestamp": datetime.now(timezone.utc).isoformat()
+              }
+              if fields:
+                  embed["fields"] = fields
+
               payload = {
-                  "username": "GitHub Command Center",
+                  "username": bot_name,
                   "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-                  "embeds": [
-                      {
-                          "title": title,
-                          "url": f"https://github.com/{repo_name}",
-                          "description": description,
-                          "color": color,
-                          "author": {
-                              "name": actor_name,
-                              "url": f"https://github.com/{actor_name}",
-                              "icon_url": actor_avatar
-                          },
-                          "footer": {
-                              "text": f"Repository: {repo_name}"
-                          }
-                      }
-                  ]
+                  "embeds": [embed]
               }
               req = urllib.request.Request(
                   webhook_url,
                   data=json.dumps(payload).encode('utf-8'),
-                  headers={'Content-Type': 'application/json', 'User-Agent': 'GitHub-Actions-Monitor'}
+                  headers={'Content-Type': 'application/json', 'User-Agent': 'GitHub-Cyberpunk-Monitor'}
               )
               urllib.request.urlopen(req)
 
@@ -81,18 +88,23 @@ jobs:
               with open(state_file, 'r') as f:
                   last_id = f.read().strip()
 
-          # Palaweni parata run weddi danata thiyena anthima event ID eka save karagannawa
+          # Initial activation alert
           if not last_id:
               with open(state_file, 'w') as f:
                   f.write(str(events[0]['id']))
               send_discord(
                   w_repos,
-                  "✅ Discord GitHub Monitor Activated!",
-                  "Oyaage mulu GitHub account ekema siduwana wenasakam dan channels 3ta wenama labevi!",
-                  5793266, # Cyberpunk Blue
+                  "Repo Watcher",
+                  "⚡ CYBERPUNK MONITOR ONLINE",
+                  "GitHub Command Center is now active. All account events will stream directly to your channels.",
+                  0x00f3ff, # Neon Cyan
                   f"{username}/{username}",
                   username,
-                  events[0]['actor']['avatar_url']
+                  events[0]['actor']['avatar_url'],
+                  fields=[
+                      {"name": "📡 Status", "value": "`ACTIVE`", "inline": True},
+                      {"name": "👤 Target", "value": f"`{username}`", "inline": True}
+                  ]
               )
               exit(0)
 
@@ -109,27 +121,107 @@ jobs:
               avatar = ev['actor']['avatar_url']
               payload = ev.get('payload', {})
 
-              # 1. NEW REPOS CHANNEL (Neon Green: 3066993 / Cyberpunk Purple: 10711543)
+              # 1. REPO WATCHER (#new-repos)
               if ev_type == 'CreateEvent' and payload.get('ref_type') == 'repository':
-                  send_discord(w_repos, "🆕 New Repository Created!", f"**{actor}** විසින් `{repo}` නමින් අලුත් repository එකක් සාදන ලදී.", 3066993, repo, actor, avatar)
+                  send_discord(
+                      w_repos,
+                      "Repo Watcher",
+                      "🆕 NEW REPOSITORY DEPLOYED",
+                      f"**{actor}** initialized a brand new repository.",
+                      0x00ff9f, # Neon Mint Green
+                      repo, actor, avatar,
+                      fields=[
+                          {"name": "📦 Repository", "value": f"`{repo}`", "inline": True},
+                          {"name": "⚡ Action", "value": "`CREATED`", "inline": True}
+                      ]
+                  )
               elif ev_type == 'PublicEvent':
-                  send_discord(w_repos, "🌍 Repository Made Public!", f"`{repo}` repository එක Public කරන ලදී.", 10711543, repo, actor, avatar)
+                  send_discord(
+                      w_repos,
+                      "Repo Watcher",
+                      "🌐 REPOSITORY WENT PUBLIC",
+                      f"`{repo}` is now visible to the public network.",
+                      0xa371f7, # Cyberpunk Purple
+                      repo, actor, avatar,
+                      fields=[
+                          {"name": "📦 Repository", "value": f"`{repo}`", "inline": True},
+                          {"name": "🔓 Visibility", "value": "`PUBLIC`", "inline": True}
+                      ]
+                  )
 
-              # 2. CODE ACTIVITY CHANNEL (Cyberpunk Blue: 5793266 / Red: 15158332)
+              # 2. CODE PULSE (#code-activity)
               elif ev_type == 'PushEvent':
                   branch = payload.get('ref', '').replace('refs/heads/', '')
                   commits_count = len(payload.get('commits', []))
-                  send_discord(w_activity, "🚀 New Code Pushed!", f"**Branch:** `{branch}`\n**Commits:** {commits_count} new commit(s) pushed.", 5793266, repo, actor, avatar)
+                  send_discord(
+                      w_activity,
+                      "Code Pulse",
+                      "🚀 CODE PUSH DETECTED",
+                      f"Fresh commits pushed to `{repo}`.",
+                      0x00f3ff, # Neon Cyan
+                      repo, actor, avatar,
+                      fields=[
+                          {"name": "🌿 Branch", "value": f"`{branch}`", "inline": True},
+                          {"name": "📝 Commits", "value": f"`{commits_count} commit(s)`", "inline": True}
+                      ]
+                  )
               elif ev_type == 'CreateEvent' and payload.get('ref_type') == 'branch':
-                  send_discord(w_activity, "🌿 New Branch Created!", f"**Branch:** `{payload.get('ref')}` සාදන ලදී.", 5793266, repo, actor, avatar)
+                  branch_name = payload.get('ref')
+                  send_discord(
+                      w_activity,
+                      "Code Pulse",
+                      "🌿 NEW BRANCH CREATED",
+                      f"A new development branch was spun up in `{repo}`.",
+                      0xa371f7, # Cyberpunk Purple
+                      repo, actor, avatar,
+                      fields=[
+                          {"name": "🌿 Branch", "value": f"`{branch_name}`", "inline": True},
+                          {"name": "⚡ Status", "value": "`ACTIVE`", "inline": True}
+                      ]
+                  )
               elif ev_type == 'DeleteEvent':
-                  send_discord(w_activity, "🗑️ Branch / Tag Deleted!", f"**Deleted ({payload.get('ref_type')}):** `{payload.get('ref')}` ඉවත් කරන ලදී.", 15158332, repo, actor, avatar)
+                  ref_type = payload.get('ref_type', 'ref').upper()
+                  ref_name = payload.get('ref')
+                  send_discord(
+                      w_activity,
+                      "Code Pulse",
+                      f"🗑️ {ref_type} TERMINATED",
+                      f"A {ref_type.lower()} was removed from `{repo}`.",
+                      0xff0055, # Laser Crimson Red
+                      repo, actor, avatar,
+                      fields=[
+                          {"name": "🎯 Target", "value": f"`{ref_name}`", "inline": True},
+                          {"name": "⚠️ Action", "value": "`DELETED`", "inline": True}
+                      ]
+                  )
 
-              # 3. STARS & FORKS CHANNEL (Gold: 15844367)
+              # 3. STAR TRACKER (#stars-and-forks)
               elif ev_type == 'WatchEvent':
-                  send_discord(w_stars, "⭐ New Star Received!", f"**{actor}** විසින් ඔබේ `{repo}` repository එකට Star එකක් ලබා දුන්නා!", 15844367, repo, actor, avatar)
+                  send_discord(
+                      w_stars,
+                      "Star Tracker",
+                      "⭐ NEW STAR RECEIVED",
+                      f"**{actor}** starred your repository `{repo}`!",
+                      0xffd700, # Cyber Gold
+                      repo, actor, avatar,
+                      fields=[
+                          {"name": "📦 Repository", "value": f"`{repo}`", "inline": True},
+                          {"name": "👤 Stargazer", "value": f"`{actor}`", "inline": True}
+                      ]
+                  )
               elif ev_type == 'ForkEvent':
-                  send_discord(w_stars, "🍴 Repository Forked!", f"**{actor}** විසින් `{repo}` repository එක Fork කරන ලදී!", 15844367, repo, actor, avatar)
+                  send_discord(
+                      w_stars,
+                      "Star Tracker",
+                      "🍴 REPOSITORY FORKED",
+                      f"**{actor}** created a fork of `{repo}`!",
+                      0xff9900, # Neon Amber
+                      repo, actor, avatar,
+                      fields=[
+                          {"name": "📦 Repository", "value": f"`{repo}`", "inline": True},
+                          {"name": "👤 Forked By", "value": f"`{actor}`", "inline": True}
+                      ]
+                  )
 
           if new_events:
               with open(state_file, 'w') as f:
