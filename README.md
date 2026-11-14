@@ -89,6 +89,11 @@
 
 ---
 
+<h3 align="center">🐍 Contribution Snake</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shan2003034/shan2003034/output/github-snake-cyberpunk.svg" alt="Cyberpunk Contribution Snake" />
+</p>
+
 <h3 align="center">🤝 Connect with me</h3>
 
 <p align="center">
