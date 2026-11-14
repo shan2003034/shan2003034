@@ -31,13 +31,6 @@
 - 📫 How to reach me: **shangajanayake7@gmail.com**
 
 ---
-### 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=shan2003034&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&column=6" alt="GitHub Trophies" />
-</p>
-
----
 
 ### ⚡ My Tech Arsenal
 
