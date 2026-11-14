@@ -79,22 +79,8 @@
   <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=shan2003034&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shan2003034&bg_color=1a1b27&color=70a5fd&line=38bdae&point=ffffff&area=true&hide_border=true" alt="Activity Graph" />
-</p>
-
----
-
-### 🚀 Featured Projects
-
-| Project | Description |
-| ------- | ----------- |
-| 🍃 **[Leafy Lane Android Application](https://github.com/shan2003034/Leafy-Lane-Android-Application)** | An organic food e-commerce mobile application. |
-| ⚙️ **[Leafy Lane Springboot Admin Panel](https://github.com/shan2003034/leafylane-android-application-admin-web)** | The backend administrative dashboard to manage the Leafy Lane platform. |
-| 🏦 **[CBC Bank Java Desktop Application](https://github.com/Callisto-Software-Solution/CBC-Bank-System)** | A secure stand-alone banking management system developed with Java to handle financial operations and transactions. |
-| 🍔 **[Burger House Java Desktop Application](https://github.com/shan2003034/Burger-House)** | A stand-alone desktop application built with Java and NetBeans for managing a burger shop. |
-| 💬 **[Zap Chat React Chat Application](https://github.com/shan2003034/Zap-Chat-)** | A modern real-time chat application built with React Native. |
-| 📚 **[The Book Club PHP E-Commerce Application](https://github.com/shan2003034/The-Book-Club-online-book-shop)** | A comprehensive online bookstore and e-commerce platform built with PHP. |
+### 📊 My 3D Contribution Graph
+![3D Contribution Graph](./profile-3d-contrib/profile-night-rainbow.svg)
 
 
 
@@ -136,6 +122,3 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0E75B6&height=120&section=footer" width="100%" alt="Footer Wave" />
 
-## 🌱 Touch Grass
-
-Touch Grass 🌱 Streak: 1 Day <!-- touch-grass:last=2026-10-11 -->
