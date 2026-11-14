@@ -14,16 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Generate Trophies SVG
-        uses: jwenjian/github-profile-trophy-action@v1
-        with:
-          username: ${{ github.repository_owner }}
-          theme: tokyonight
-          no-frame: true
-          no-bg: true
-          margin-w: 15
-          column: 6
-          output: ./profile-3d-contrib/trophies.svg
+      - name: Download & Save Trophies SVG
+        run: |
+          mkdir -p profile-3d-contrib
+          USER="${{ github.repository_owner }}"
+          PARAMS="username=${USER}&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&column=6"
+          
+          # Working servers kihipayakin try karala SVG eka gannawa
+          curl -f -s "https://github-profile-trophy.vercel.app/?${PARAMS}" -o profile-3d-contrib/trophies.svg || \
+          curl -f -s "https://github-profile-trophy-fork-alpha.vercel.app/?${PARAMS}" -o profile-3d-contrib/trophies.svg || \
+          curl -f -s "https://trophy.ryo-ma.com/?${PARAMS}" -o profile-3d-contrib/trophies.svg
 
       - name: Commit & Push
         run: |
