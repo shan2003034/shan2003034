@@ -70,9 +70,9 @@
 
 ### 📊 GitHub Activity & Stats
 
-<p align="center">
-  [![GitHub Streak](https://streak-stats.demolab.com?user=shan2003034&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-</p>
+<a href="https://git.io/streak-stats">
+  <img src="https://streak-stats.demolab.com?user=shan2003034&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</a>
 
 <p align="center">
   <img src="https://github-readme-stats.shion.dev/api?username=shan2003034&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
