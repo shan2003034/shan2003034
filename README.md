@@ -52,11 +52,12 @@
 
 <p align="left">
   <strong>AI Tools (AI-Assisted Development):</strong><br><br>
-  <img src="https://cdn.simpleicons.org/cursor/ffffff" alt="Cursor" width="48" />&nbsp;&nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="40" height="40" alt="ChatGPT" />
-  <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Gemini" width="48" />&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/githubcopilot/ffffff" alt="Copilot" width="48" />&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/google/4285F4" alt="Google Antigravity" width="48" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" width="42" height="42" />&nbsp;&nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini" width="42" height="42" />&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/claude/D97757" alt="Claude" width="42" height="42" />&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/cursor/ffffff" alt="Cursor" width="42" height="42" />&nbsp;&nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Antigravity" width="42" height="42" />&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/githubcopilot/ffffff" alt="GitHub Copilot" width="42" height="42" />
 </p>
 
 <p align="left">
