@@ -12,18 +12,22 @@ jobs:
   update-trophies:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout profile repo
+        uses: actions/checkout@v5
 
-      - name: Download & Save Trophies SVG
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v1.x
+
+      - name: Generate Trophies SVG locally
+        env:
+          GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p profile-3d-contrib
-          USER="${{ github.repository_owner }}"
-          PARAMS="username=${USER}&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&column=6"
-          
-          # Working servers kihipayakin try karala SVG eka gannawa
-          curl -f -s "https://github-profile-trophy.vercel.app/?${PARAMS}" -o profile-3d-contrib/trophies.svg || \
-          curl -f -s "https://github-profile-trophy-fork-alpha.vercel.app/?${PARAMS}" -o profile-3d-contrib/trophies.svg || \
-          curl -f -s "https://trophy.ryo-ma.com/?${PARAMS}" -o profile-3d-contrib/trophies.svg
+          git clone --depth 1 https://github.com/ryo-ma/github-profile-trophy.git /tmp/trophy
+          cd /tmp/trophy
+          mkdir -p "${{ github.workspace }}/profile-3d-contrib"
+          deno run --allow-net --allow-env --allow-read scripts/generate-svg.ts "${{ github.repository_owner }}" tokyonight 6 15 true true > "${{ github.workspace }}/profile-3d-contrib/trophies.svg" || true
 
       - name: Commit & Push
         run: |
