@@ -1,37 +1,36 @@
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=0E75B6&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Prasanna+Lakshan;Full+Stack+Software+Engineer;IoT+%26+Android+Enthusiast;Welcome+to+my+Profile!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=A371F7&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Prasanna+Lakshan;Full+Stack+Software+Engineer;IoT+%26+Android+Enthusiast;Welcome+to+my+Profile!" alt="Typing SVG" />
   </a>
 </h1>
 
-<h3 align="center">A passionate Final-Year Software Engineering Candidate from Sri Lanka</h3>
+<h3 align="center">A passionate Final-Year Software Engineering Candidate from Sri Lanka 🇱🇰</h3>
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/shan2003034?style=social" alt="GitHub followers" />
   &nbsp;
   <img src="https://img.shields.io/github/stars/shan2003034?style=social" alt="GitHub stars" />
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=shan2003034&label=Profile%20views&color=a371f7&style=flat" alt="Profile Views" />
 </p>
 
 ---
 
 <p align="center">
-  <i>""First, solve the problem. Then, write the code." - John Johnson"</i>
+  <i>"First, solve the problem. Then, write the code." - John Johnson</i>
 </p>
 
 ---
 
 ### 👨‍💻 About Me
 
-- 🎓  I am currently studying Software Engineering at the Java Institute for Advanced Technologyand reading for my top-up degree from Birmingham City University.
-- 🔭 I’m currently working on **Leafy Lane** (Organic food e-commerce).
-- 🌱 I’m currently learning **Spring Boot** and **Flutter**.
-- 💬 Ask me about **Java, Full Stack Development, and IoT **.
+- 🎓 I am currently studying Software Engineering at the **Java Institute for Advanced Technology** and reading for my top-up degree from **Birmingham City University**.
+- 🔭 I’m currently working on **Leafy Lane** (Organic food e-commerce) & **Smart City 360**.
+- 🌱 I’m currently learning **Spring Boot**, **Flutter**, and **CI/CD DevOps Pipelines**.
+- 💬 Ask me about **Java, Full Stack Development, and IoT**.
 - 📫 How to reach me: **shangajanayake7@gmail.com**
 
 ---
-
 
 
 ### ⚡ My Tech Arsenal
@@ -61,12 +60,13 @@
 </p>
 
 <p align="left">
-  <strong>Tools & Others:</strong><br><br>
+  <strong>DevOps, Tools & Others:</strong><br><br>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,arduino,androidstudio,idea,vscode" alt="Tools" />
-  </a>
+    <img src="https://skillicons.dev/icons?i=git,githubactions,maven,arduino,androidstudio,idea,vscode,postman" alt="Tools" />
+  </a>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg" alt="NetBeans" width="48" height="48" />
 </p>
+
 ---
 
 ### 📊 GitHub Activity & Stats
@@ -82,10 +82,10 @@
   <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=shan2003034&layout=compact&hide_border=true&bg_color=0d1117&title_color=a371f7&text_color=ffffff" alt="Top Languages" width="49%" />
 </p>
 
-### 📊 My 3D Contribution Graph
-![3D Contribution Graph](./profile-3d-contrib/profile-custom.svg)
-
-
+<h3 align="center">🧊 My 3D Contribution Graph</h3>
+<p align="center">
+  <img src="./profile-3d-contrib/profile-custom.svg" alt="3D Contribution Graph" />
+</p>
 
 ---
 
@@ -106,22 +106,15 @@
   </a>
 </p>
 
-
 ---
-
----
-
-<br>
 
 <div align="center">
-  
   <h3>Thank you for visiting my space!</h3>
   <p>
     If you found my Full Stack or IoT projects helpful, I'd truly appreciate a 🌟 on my repositories.<br>
     Always excited to connect, collaborate, and build something amazing!
   </p>
-  <p><b>Keep Building & Happy Coding! </b></p>
+  <p><b>Keep Building & Happy Coding! 🚀</b></p>
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0E75B6&height=120&section=footer" width="100%" alt="Footer Wave" />
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:A371F7,100:1F3A60&height=120&section=footer" width="100%" alt="Footer Wave" />
