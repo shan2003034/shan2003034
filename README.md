@@ -53,7 +53,7 @@
 <p align="left">
   <strong>AI Tools (AI-Assisted Development):</strong><br><br>
   <img src="https://cdn.simpleicons.org/cursor/ffffff" alt="Cursor" width="48" />&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/openai/00A67E" alt="ChatGPT" width="48" />&nbsp;&nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="40" height="40" alt="ChatGPT" />
   <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Gemini" width="48" />&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/githubcopilot/ffffff" alt="Copilot" width="48" />&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/google/4285F4" alt="Google Antigravity" width="48" />
@@ -71,7 +71,7 @@
 ### 📊 GitHub Activity & Stats
 
 <p align="center">
-  
+  [![GitHub Streak](https://streak-stats.demolab.com?user=shan2003034&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 </p>
 
 <p align="center">
