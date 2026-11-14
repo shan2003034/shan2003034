@@ -71,13 +71,15 @@
 
 ### 📊 GitHub Activity & Stats
 
-<a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=shan2003034&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</a>
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=shan2003034&hide_border=true&background=0d1117&ring=a371f7&fire=58a6ff&currStreakNum=ffffff&sideNums=58a6ff&currStreakLabel=a371f7&sideLabels=58a6ff&dates=8b949e&stroke=1f3a60" alt="GitHub Streak" />
+  </a>
+</p>
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=shan2003034&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=shan2003034&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.shion.dev/api?username=shan2003034&show_icons=true&hide_border=true&bg_color=0d1117&title_color=a371f7&icon_color=58a6ff&text_color=ffffff&ring_color=a371f7" alt="GitHub Stats" width="49%" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=shan2003034&layout=compact&hide_border=true&bg_color=0d1117&title_color=a371f7&text_color=ffffff" alt="Top Languages" width="49%" />
 </p>
 
 ### 📊 My 3D Contribution Graph
